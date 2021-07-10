@@ -48,7 +48,7 @@ select {
 ///--- site-specific ---///
 
 body {
-  background-color: cyan;
+  background-color:grey;
 }
 
 main {
@@ -57,14 +57,14 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: darkgoldenrod;
-  background-image: url(/img/rocks-spring-closeup.jpg);
+  background-color: rgb(29, 49, 29);
+  background-image: url("rocks-spring-closeup.jpg");
   background-size: cover;
   background-position-x: 30%;
   background-position-y: 0;
   background-repeat: no-repeat;
   text-align: center;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-large);
 }
 
 .hero {
@@ -77,8 +77,9 @@ main {
 }
 
 h1, p {
+  display: inline-block;
   margin-bottom: 1em;
-  //background-color: pink;
+  background-color: pink;
 }
 
 .important {
@@ -139,7 +140,7 @@ form {
   left: 0;
   z-index: 1;
   background-color: rgba(#000, 0.8);
-  display: none;
+  display: block;
 }
 
 .modal-sound-btn {
@@ -190,6 +191,12 @@ form {
 
 
 @media (min-width: 600px) {
+  body {
+    font-size: var(--font-size-medium);
+  }
+}
+
+@media (min-width: 900px) {
   body {
     font-size: var(--font-size-medium);
   }
