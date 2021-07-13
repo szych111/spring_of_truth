@@ -55,7 +55,7 @@ main {
   left: 0;
   width: 100%;
   background-color: #1d311d;
-  background-image: url(/rocks-spring-closeup.jpg);
+  background-image: url(../img/rocks-spring-closeup.jpg);
   background-size: cover;
   background-position-x: 30%;
   background-position-y: 0;
