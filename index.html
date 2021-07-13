@@ -14,23 +14,20 @@
         </modal>
         <div class="hero">
             <h1>the spring of truth</h1>
-            <p>this is the spring of eternal truth and wisdom</p>
-            <p>hello stranger</p>
-            <p>tell me your name?</p>
+            <h2>this is the spring of eternal truth and wisdom</h2>
+            <h3>hello stranger, tell me your name</h3>
             <form method="post">
-            <input class="input-name" type="text" name="name" placeholder="tell me your name">
+            <input class="input-name" type="text" name="name" placeholder="your name">
             <input class="btn input-btn" type="submit" value="tell">
-            <p>i greet you, <?=$_POST["name"];?>, to the Spring of Truth </p>
-            <p>you may ask me a question...</p>
-            <p>what is bothering you, <?=$_POST["name"];?>?</p>
-            <input class="input-name" type="text" name="question" placeholder="write your question">
-            <input class="btn input-btn" type="submit" value="ask">
-            </form>
-            <?php
-            if ($_POST["question"]) {
-                echo "<p>got a question</p>";
+            <!-- <?php
+            if($_POST) {
+                echo "<p>I greet you, ${_POST["name"]}</p>";
+                echo "<p>you may ask me a question...</p>
+                <p>what is bothering you, ${_POST["name"]}\?</p>";   
             }
-            ?>
+            ?> -->
+            
+            </form>
         </div>
         <audio class="audio" loop>
             <source src="spring-forest-birds-sounds.mp3" type="audio/mp3">

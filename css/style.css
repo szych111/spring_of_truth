@@ -18,7 +18,7 @@ body {
   font-weight: 400;
   font-size: 1.25rem;
   background-color: #e7e7ee;
-  color: #302e2e;
+  color: #222422;
   padding-bottom: 6rem;
 }
 
@@ -34,6 +34,7 @@ textarea,
 select {
   font: inherit;
   outline: none;
+  border: none;
 }
 
 :root {
@@ -54,7 +55,7 @@ main {
   left: 0;
   width: 100%;
   background-color: #1d311d;
-  background-image: url("rocks-spring-closeup.jpg");
+  background-image: url(/rocks-spring-closeup.jpg);
   background-size: cover;
   background-position-x: 30%;
   background-position-y: 0;
@@ -66,16 +67,19 @@ main {
 .hero {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 5vh auto;
-  padding: 2vh 3vh 3vh;
+  padding: 7vh 3vh 3vh;
   width: 80%;
   height: 80vh;
   max-width: 800px;
 }
 
-h1, p {
+h1, h2, h3 {
   display: inline-block;
-  margin-bottom: 1em;
-  background-color: pink;
+  margin-bottom: 1.5em;
+}
+
+h2, h3 {
+  font-weight: 200;
 }
 
 .important {
@@ -138,7 +142,7 @@ form .input-btn:hover {
   left: 0;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
-  display: block;
+  display: none;
 }
 
 .modal-sound-btn {
